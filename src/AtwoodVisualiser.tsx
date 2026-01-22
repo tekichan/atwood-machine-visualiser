@@ -177,19 +177,19 @@ const AtwoodVisualiser: React.FC = () => {
       <Card>
         <CardContent>
           <label>Mass of P: {m1.toFixed(2)} kg</label>
-          <Slider min={0.1} max={1} step={0.01} value={[m1]} onValueChange={v => setM1(v[0])} />
+          <Slider min={0.1} max={1} step={0.01} value={[m1]} onValueChange={(v: number[]) => setM1(v[0])} />
         </CardContent>
         <CardContent>
           <label>Mass of Q: {m2.toFixed(2)} kg</label>
-          <Slider min={0.1} max={1} step={0.01} value={[m2]} onValueChange={v => setM2(v[0])} />
+          <Slider min={0.1} max={1} step={0.01} value={[m2]} onValueChange={(v: number[]) => setM2(v[0])} />
         </CardContent>
         <CardContent>
           <label>Height: {h.toFixed(2)} m</label>
-          <Slider min={0.1} max={2} step={0.01} value={[h]} onValueChange={v => setH(v[0])} />
+          <Slider min={0.1} max={2} step={0.01} value={[h]} onValueChange={(v: number[]) => setH(v[0])} />
         </CardContent>
         <CardContent>
           <label>Time before break: {time.toFixed(2)} s</label>
-          <Slider min={0.1} max={1} step={0.01} value={[time]} onValueChange={v => setTime(v[0])} />
+          <Slider min={0.1} max={1} step={0.01} value={[time]} onValueChange={(v: number[]) => setTime(v[0])} />
         </CardContent>
       </Card>
 
